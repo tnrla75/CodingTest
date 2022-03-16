@@ -14,4 +14,3 @@ def solution(lottos, win_nums):
         min = 6
     answer = [max, min]
     return answer
-    ///
