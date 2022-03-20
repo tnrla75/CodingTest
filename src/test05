@@ -1,0 +1,16 @@
+#소수 만들기
+def plus(a, b, c):
+    x = a + b + c
+    for i in range(2, x):
+        if x % i == 0 : 
+            return False
+    return True
+            
+def solution(nums):
+    ans = 0
+    for i in range(0, len(nums)): 
+        for j in range(i+1, len(nums)): 
+            for k in range(j+1, len(nums)): 
+                if plus(nums[i], nums[j], nums[k]):
+                    ans += 1
+    return ans
