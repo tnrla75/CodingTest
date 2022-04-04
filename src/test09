@@ -1,0 +1,15 @@
+#체육복
+def solution(n, lost, reserve):
+    
+    res = set(reserve)  - set(lost)
+    los = set(lost) - set(reserve)
+    
+    for reserve in res:
+        front = reserve - 1
+        back = reserve + 1
+        if front in los:
+            los.remove(front)
+        elif back in los:
+            los.remove(back)
+            
+    return n - len(los)
