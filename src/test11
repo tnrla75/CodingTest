@@ -9,7 +9,18 @@ def solution(left, right):
         if num % 2 == 0:
             answer += i
         else:
-            answer -= i
+            answer -= i                       
+    return answer
+
+# 다풀고 풀이보니까 자연수의 거듭제곱인 숫자라면 약수의 개수가 홀수개. 그거써서 for를 한번 덜씀
+def solution(left, right):
+    answer = 0
+    for num in range(left, right+1):
+        
+        if num ** (1/2) == int(num** (1/2)):
+            answer -= num
+        else:
+            answer += num
                 
             
     return answer
