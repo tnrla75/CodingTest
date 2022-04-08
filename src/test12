@@ -1,0 +1,10 @@
+#3진법 뒤집기
+def solution(n):
+    answer = 0
+    res = ''
+    while n > 0:
+        n, x = divmod(n, 3)
+        res += str(x)
+    answer = int(res, 3)
+        
+    return answer
