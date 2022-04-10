@@ -1,0 +1,11 @@
+#예산
+def solution(d, budget):
+    answer = 0
+    d.sort()
+    for i in d:
+        budget -= ihttps://github.com/tnrla75/P_t
+        if budget < 0:
+            break
+        answer += 1
+            
+    return answer
