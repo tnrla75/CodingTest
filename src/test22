@@ -1,0 +1,12 @@
+#문자열 내 마음대로 정렬하기
+def solution(strings, n):
+    str = []
+    for i in strings:
+        str.append(i[n]+i)
+    str.sort()
+    answer = []
+    for i in str:
+        answer.append(i[1:])
+
+    
+    return answer
