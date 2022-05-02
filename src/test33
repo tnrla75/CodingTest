@@ -1,0 +1,11 @@
+#JadenCase
+def solution(s):
+    ans = ''
+    a = s.split(' ')    
+    for i in a:
+        if i =='':
+            ans+= ' '
+        else:
+            ans += i[0].upper() + i[1:].lower() + ' '                
+    return ans[:-1]
+
