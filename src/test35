@@ -1,0 +1,11 @@
+#피보나치 수
+# 문제 똑바로 안읽고 리턴에 %1234567 안붙혔다가 오래걸렸다.
+def solution(n):   
+    a = [0,1]    
+    
+    for i in range(n):
+        a.append(a[i]+a[i+1])    
+        
+    return a[-2]%1234567
+    
+   
